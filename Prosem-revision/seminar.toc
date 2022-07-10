@@ -1,0 +1,22 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.2}%
+\contentsline {section}{\numberline {1.1}What is Augmented Reality?}{1}{section.3}%
+\contentsline {section}{\numberline {1.2}The importance of Social Presence}{2}{section.4}%
+\contentsline {section}{\numberline {1.3}Why remote work is here to stay}{2}{section.5}%
+\contentsline {chapter}{\numberline {2}Related Work}{5}{chapter.6}%
+\contentsline {section}{\numberline {2.1}The Effect of Avatar Appearance on Social Presence in an Augmented Reality Remote Collaboration}{5}{section.7}%
+\contentsline {section}{\numberline {2.2}Social interaction in augmented reality}{6}{section.10}%
+\contentsline {subsection}{\numberline {2.2.1}Social inhibition and facilitation}{6}{subsection.11}%
+\contentsline {subsection}{\numberline {2.2.2}Social norms in AR}{8}{subsection.14}%
+\contentsline {subsection}{\numberline {2.2.3}Social connectedness between AR users and non-users}{8}{subsection.16}%
+\contentsline {section}{\numberline {2.3}Collaborative Augmented Reality}{9}{section.17}%
+\contentsline {subsection}{\numberline {2.3.1}face-to-face collaboration}{9}{subsection.18}%
+\contentsline {subsection}{\numberline {2.3.2}Remote collaboration}{10}{subsection.20}%
+\contentsline {chapter}{\numberline {3}The possibilities of AR in remote collaboration}{11}{chapter.21}%
+\contentsline {section}{\numberline {3.1}The possibilities of AR in remote collaboration}{11}{section.22}%
+\contentsline {section}{\numberline {3.2}Optimal Avatar design}{12}{section.24}%
+\contentsline {chapter}{\numberline {4}Conclusion}{15}{chapter.27}%
+\contentsline {chapter}{Bibliography}{17}{chapter*.28}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,86 @@
+%header for settings and package loading
+
+\documentclass[
+	a4paper, % A4 paper size
+	12pt, %	larger font size
+	BCOR = 1cm, % make inner margin (book) larger 
+]{scrbook}
+ 
+\usepackage{scrhack} % addition to koma script; disables warning concerning  \float@addtolists  in package listings
+ 
+\usepackage{etoolbox} % for toggling options 
+\newtoggle{english}
+\doclanguage %execute the toggle for this
+
+\iftoggle{english}
+{
+	\usepackage[english]{babel}
+	\selectlanguage{english}
+}
+{
+	\usepackage[ngerman]{babel}
+	\selectlanguage{ngerman}
+}
+
+% Package for text and input type
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} %Linux: [utf8]; MAC: [macce]; Windows: [utf8]
+
+
+\usepackage[absolute]{textpos} % for positioning logo
+
+\setlength{\unitlength}{1mm} %one unit is equal 1mm
+\tolerance = 9000 % avoid that text gets wider the textwith
+
+\usepackage{
+	graphicx, % include graphics
+	varioref, % comfy references -> \label + \vref + \vpageref
+	listings, % for listings
+	enumerate,% for enumerations
+	epstopdf, % convert eps figures to pdf
+	multirow,  % for multirows and columns in tables
+	longtable % for tables longer than one page
+}
+
+
+% better floats for floating around figures and tables
+\usepackage{float}
+\restylefloat{table}
+\restylefloat{figure}
+
+% define how captions should look like
+\usepackage[bf,small]{caption}
+
+\usepackage[hang,nooneline]{subfigure} % create subfigures with own captions
+
+\usepackage{calc}
+
+% line under chapter/section name
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\setheadsepline{0.4pt}
+
+\usepackage[nottoc]{tocbibind} %bibliography in table of content
+\usepackage{babelbib} %References in the corresponding language
+\bibliographystyle{gerapali} 
+
+% avoid errors due to old font commands in gerapali
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareOldFontCommand{\em}{\normalfont\itshape}{\mathit}
+
+% this package has to be included last!
+\usepackage[
+	pdftitle={\doctitle},
+	pdfauthor={\docauthor},
+	pdfpagemode=UseOutlines,
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=black,
+	citecolor=black,
+	plainpages=false,
+	hypertexnames=false,
+	pdfpagelabels=true,
+	hyperfootnotes=false,
+	hyperindex=true 
+	]{hyperref} 
+

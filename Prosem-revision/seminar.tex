@@ -1,0 +1,41 @@
+% for english documents: uncomment the next line with \newcommand and comment the line after that
+% for german documents: comment the next line with \newcommand and uncomment the line after that
+% might need to compile twice for correct application of language change
+
+\newcommand{\doclanguage}{\toggletrue{english}}  
+%\newcommand{\doclanguage}{\togglefalse{english}} 
+
+% change the following information
+\newcommand{\docauthor}{Alexander Kulibaba}
+\newcommand{\doctitle}{The importance of Augmented Reality in remote collaboration and the social effects it has on the user}
+\newcommand{\matrikel}{422 406}
+\newcommand{\supervisor}{Dipl.-Inform.~Hattori Hanzo }
+
+\newcommand{\seminartitle}{Interaction in Virtual Worlds} %{Interaction in Virtual Worlds}
+\newcommand{\seminartype}{Pro-Seminar} %{Pro-Seminar}
+\newcommand{\term}{Summer Term 2022}
+% if it is necessary to change more information on the titlepage take a look at titlepage.tex
+
+\input{header} %definition of all packages etc.
+
+\begin{document}
+\input{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+
+%comment the follwoing line for first and final submission (only used for literature research)
+%\input{literatureResearch}
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+% here you can include separate files for every section
+\input{introduction}
+\input{relatedWork}
+\input{mainPart}
+\input{conclusion}
+\bibliography{literature}
+
+\end{document}
+
